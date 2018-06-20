@@ -66,6 +66,7 @@ var inputWizardCoat = document.querySelector('input[name = coat-color]');
 var inputWizardEyes = document.querySelector('input[name = eyes-color]');
 var inputWizardFireball = document.querySelector('input[name = fireball-color]');
 
+
 var onClosePopupEsc = function (evt) {
   if (evt.keyCode === ESC_KEY_CODE) {
     closePopup();
@@ -140,3 +141,5 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
 var wizards = getWizards(WIZARDS_QUANTITY);
 var elementWizards = getElementsWizard(wizards);
 setupSimilarList.appendChild(elementWizards);
+
+document.querySelector('.setup-similar').classList.remove('hidden');
